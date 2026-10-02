@@ -1,0 +1,14 @@
+<p>Ola </p>
+<h1>{{ minhaProp }}</h1>
+
+<button (click)="submit()" [attr.teste]="idButton">  clique  </button>
+
+@if(deveMostrarTitulo){
+<h1> titulo </h1>
+}@else {
+    <h1>Nao mostra titulo</h1>
+}
+ 
+@for (item of listItens; track item) {
+    <p>{{ item }}</p>
+}
